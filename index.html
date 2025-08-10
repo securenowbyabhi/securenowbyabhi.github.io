@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Meta description for search engines -->
+  <meta name="description" content="Abhirami SR — personal site: cybersecurity, cloud security, and projects." />
+  <title>Abhirami SR — Personal Site</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body>
+  <header id="top">
+    <h1 class="accent">Hi, I’m Abhirami 👋</h1>
+    <p class="muted">Cybersecurity | Cloud Security | IAM | DevSecOps</p>
+    <nav>
+      <a class="btn" href="#about">About</a>
+      <a class="btn" href="#projects">Projects</a>
+      <a class="btn" href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>
+    </nav>
+  </header>
+
+  <!-- Section 1 -->
+  <div id="about" class="section">
+    <h2 class="accent">About Me</h2>
+    <p>
+      I’m a security engineer interested in building safe, scalable systems. I enjoy threat
+      detection, incident response, and hands-on labs.
+    </p>
+    <img class="profile" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="Profile placeholder" />
+  </div>
+
+  <!-- Section 2 -->
+  <div id="projects" class="section">
+    <h2 class="accent">Featured Projects</h2>
+    <ul>
+      <li class="card">Hardware-as-a-Service (HaaS) POC — Role: PM & Security</li>
+      <li class="card">Cloud Identity Automation — Role: Engineer</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p class="muted">© <span id="year"></span> Abhirami SR • <a href="#top">Back to top</a></p>
+    <script>
+      // Tiny vanilla JS just to update the year (allowed but not required)
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
