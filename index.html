@@ -4,52 +4,85 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Rubric: meta description -->
-  <meta name="description" content="Abhirami SR — Senior Security Engineer focused on cloud security, IAM, DevSecOps. MSITM student; aims for leadership and impact." />
+  <meta name="description" content="Security engineer portfolio — cloud security, IAM, incident response, DevSecOps. MSITM @ UT Austin." />
   <title>Abhirami SR — Portfolio</title>
   <link rel="stylesheet" href="stylesheet.css" />
 </head>
 <body>
-  <!-- Simple top nav -->
-  <nav class="navbar">
-    <a href="index.html" aria-current="page">Home</a>
-    <a href="career.html">Career</a>
-    <!-- Rubric: external link present -->
-    <a class="ext" href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>
+  <!-- Top navigation -->
+  <nav class="nav">
+    <a class="brand" href="#hero">Portfolio</a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <!-- External site for rubric -->
+      <a class="ext" href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>
+    </div>
   </nav>
 
-  <main class="hero" role="main">
-    <!-- LEFT: Profile panel -->
-    <section id="intro" class="profile-panel"><!-- Rubric: styled id (#intro) -->
-      <figure class="avatar">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="Abhirami SR profile photo" />
-      </figure>
-      <h1 class="name">Abhirami <span>SR</span></h1>
-      <p class="tagline">Senior Security Engineer • Cloud Security • IAM • DevSecOps</p>
+  <!-- HERO -->
+  <header id="hero" class="hero"><!-- Rubric: styled id present -->
+    <div class="hero-text">
+      <h1>Hi, I am <span class="accent">Abhirami</span>.</h1>
+      <p class="sub">I build secure, scalable systems people can trust.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://www.linkedin.com/in/abhiramisr" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn outline" href="https://tryhackme.com/" target="_blank" rel="noopener">TryHackMe</a>
+        <a class="btn outline" href="https://medium.com/" target="_blank" rel="noopener">Medium</a>
+      </div>
+    </div>
+    <figure class="hero-photo">
+      <!-- Replace this placeholder with your real photo later -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="Profile photo placeholder" />
+    </figure>
+  </header>
+
+  <!-- CONTENT WRAPPER (two+ sections) -->
+  <main id="about" class="content">
+    <section class="panel about">
+      <h2>About</h2>
+      <p class="blurb">
+        Welcome! 👋 Passionate about building secure, scalable systems, I bring 6+ years across
+        cloud security, identity & access management, incident response, and DevSecOps. Now pursuing
+        my MSITM at The University of Texas at Austin, I’m sharpening technical depth and leadership to
+        deliver trustworthy products and champion underrepresented voices in tech.
+      </p>
     </section>
 
-    <!-- RIGHT: Content panel -->
-    <section class="copy">
-      <h2 class="hello">Hello</h2>
-      <p class="sub">Here’s who I am & what I do</p>
+    <section id="education" class="panel">
+      <h2>Education</h2>
+      <ul class="edu">
+        <li>
+          <strong>UT Austin</strong> — M.S. Information Technology & Management (MSITM), May 2026
+        </li>
+        <li>
+          <strong>Seneca College, Canada</strong> — PG Diploma, Cybersecurity & Threat Management (4.0), Apr 2021
+        </li>
+        <li>
+          <strong>Anna University, India</strong> — B.E. Electronics & Communication (3.21), Apr 2018
+        </li>
+      </ul>
+    </section>
 
-      <p class="blurb">
-  Welcome! 👋 Passionate about building secure, scalable systems, I bring over six years of
-  cybersecurity experience spanning cloud security, identity and access management, incident
-  response, and DevSecOps. Currently pursuing my MSITM at The University of Texas at Austin, I’m
-  expanding my technical depth and leadership skills to create solutions people can trust — while
-  championing underrepresented voices in tech.
-      </p>
-
-      <div class="buttons">
-        <a class="btn primary" href="/Abhirami_SR_Resume.pdf" target="_blank" rel="noopener">My Resume</a>
-        <a class="btn outline" href="https://www.linkedin.com/in/abhiramisr/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn outline" href="https://medium.com/" target="_blank" rel="noopener">View my Medium blog</a>
+    <section id="projects" class="panel">
+      <h2>Selected Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>SBOM Project — Team Blue (EA)</h3>
+          <p>Architected a software bill of materials system using Neo4j to map 10,000+ dependencies and
+             accelerate vulnerability analysis.</p>
+        </article>
+        <article class="card">
+          <h3>Ethical Hacking Capstone — Seneca</h3>
+          <p>Conducted penetration testing and phishing simulations (Kali/SET) on a campus network, identified
+             vulnerabilities, and delivered remediation steps.</p>
+        </article>
       </div>
-      
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer">
     <p>© <span id="year"></span> Abhirami SR</p>
   </footer>
 
