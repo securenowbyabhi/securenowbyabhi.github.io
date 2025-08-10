@@ -1,0 +1,58 @@
+/* Example: apply styles to a tag with a selector */
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0; /* box model property */
+}
+
+header {
+  padding: 2rem; /* box model property */
+  border-bottom: 1px solid #e5e7eb; /* box model property */
+  text-align: center;
+}
+
+/* Class used on multiple elements */
+.accent { color: #0f766e; }
+.muted { color: #6b7280; }
+
+/* Reusable button style (class applied to multiple <a> elements) */
+.btn {
+  display: inline-block;
+  margin: .25rem;
+  padding: .5rem .75rem; /* box model property */
+  border: 1px solid #d1d5db; /* box model property */
+  border-radius: .5rem;
+  text-decoration: none;
+}
+/* Change color on hover for <a> */
+.btn:hover { background: #f1f5f9; }
+
+/* ID example */
+#about { background: #f9fafb; }
+
+.section {
+  padding: 2rem 1rem; /* box model property */
+}
+
+.card {
+  background: white;
+  padding: 1rem; /* box model property */
+  border: 1px solid #e5e7eb; /* box model property */
+  border-radius: .75rem;
+  max-width: 42rem;
+  margin: .5rem auto; /* box model property */
+}
+
+.profile {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: block;
+  margin-top: 1rem; /* box model property */
+}
+
+footer {
+  padding: 1rem; /* box model property */
+  text-align: center;
+  border-top: 1px solid #e5e7eb; /* box model property */
+}
